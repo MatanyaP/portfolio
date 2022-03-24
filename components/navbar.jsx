@@ -1,16 +1,68 @@
-export default function Navbar() {
+import { useState } from 'react'
+import {prefix} from '../utils/prefix'
+
+function NavLink({to, children}) {
+    return <a href={to} className={`mx-4`}>
+        {children}
+    </a>
+}
+
+function MobileNav({open, setOpen}) {
     return (
-        <nav className="navbar">
-        <div className="navbar-brand">
-            <a className="navbar-item" href="https://matanyap.github.io/portfolio/" rel="noopener noreferrer">
-                <img src="https://matanyap.github.io/portfolio/public/logo.png" alt="Logo" />
-            </a>
-            <div className="navbar-burger burger" data-target="navbarExampleTransparentExample">
-                <span></span>
-                <span></span>
-                <span></span>
+        <div className={`absolute top-0 left-0 h-screen w-full bg-white transform ${open ? "-translate-x-0" : "-translate-x-full"} transition-transform duration-300 ease-in-out filter drop-shadow-md `}>
+            <div className="flex items-center justify-center filter drop-shadow-md bg-white h-20"> {/*logo container*/}
+                <a className="text-xl font-semibold" href="/">
+                    <img src={`${prefix}/images/logo.png`} alt="logo" className="h-10" />
+                </a>
             </div>
+            <div className="flex flex-col ml-4 text-lime-500">
+                <a className="text-xl font-medium my-4" href="/about" onClick={() => setTimeout(() => {setOpen(!open)}, 100)}>
+                    i()
+                </a>
+                <a className="text-xl font-normal my-4" href="/cv" onClick={() => setTimeout(() => {setOpen(!open)}, 100)}>
+                    .cv()
+                </a>
+                <a className="text-xl font-normal my-4" href="/blog" onClick={() => setTimeout(() => {setOpen(!open)}, 100)}>
+                    projects()
+                </a>
+            </div>  
         </div>
+    )
+}
+
+export default function Navbar() {
+
+    const [open, setOpen] = useState(false)
+    return (
+        <nav className="flex filter drop-shadow-md bg-white px-4 py-4 h-20 items-center selection:bg-lime-300 selection:text-black">
+            <MobileNav open={open} setOpen={setOpen}/>
+            <div className="w-3/12 flex items-center">
+                <a className="text-2xl font-semibold" href="/">
+                    <img src={`${prefix}/images/logo.png`} alt="logo" className="h-10" />
+                </a>
+            </div>
+            <div className="w-9/12 flex justify-end items-center">
+
+                <div className="z-50 flex relative w-8 h-8 flex-col justify-between items-center md:hidden" onClick={() => {
+                    setOpen(!open)
+                }}>
+                    {/* hamburger button */}
+                    <span className={`h-1 w-full bg-black rounded-lg transform transition duration-300 ease-in-out ${open ? "rotate-45 translate-y-3.5" : ""}`} />
+                    <span className={`h-1 w-full bg-black rounded-lg transition-all duration-300 ease-in-out ${open ? "w-0" : "w-full"}`} />
+                    <span className={`h-1 w-full bg-black rounded-lg transform transition duration-300 ease-in-out ${open ? "-rotate-45 -translate-y-3.5" : ""}`} />
+                </div>
+                <div className="hidden md:flex text-lime-500">
+                    <NavLink to="/about">
+                        .i()
+                    </NavLink>
+                    <NavLink to="/cv">
+                        .cv()
+                    </NavLink>
+                    <NavLink to="/projects">
+                        .projects()
+                    </NavLink>
+                </div>
+            </div>
         </nav>
     )
 }
