@@ -26,7 +26,7 @@ const Navbar = () => {
         </a>
       </Link>
       <button
-        className={`inline-flex p-3 hover:bg-lime-500 rounded lg:hidden text-lime ml-auto hover:text-white outline-none`}
+        className={`inline-flex p-3 hover:bg-lime-400 rounded lg:hidden text-lime ml-auto hover:text-white outline-none`}
         onClick={handleClick}
       >
         <svg
