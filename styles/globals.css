@@ -1,11 +1,8 @@
-<<<<<<< HEAD
-=======
 
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
->>>>>>> gh-pages
 html,
 body {
   padding: 0;
@@ -22,7 +19,3 @@ a {
 * {
   box-sizing: border-box;
 }
-<<<<<<< HEAD
-=======
-
->>>>>>> gh-pages
