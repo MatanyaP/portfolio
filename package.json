@@ -13,7 +13,7 @@
     "@types/styled-components": "^5.1.24",
     "javascript-terminal": "^1.1.1",
     "markdown-to-jsx": "^7.1.7",
-    "next": "12.1.0",
+    "next": "^12.1.1",
     "next-compose-plugins": "^2.2.1",
     "next-transpile-modules": "^9.0.0",
     "react": "17.0.2",
