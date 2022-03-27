@@ -1,6 +1,3 @@
-const withPlugins = require('next-compose-plugins');
-const optimizedImages = require('next-optimized-images');
-
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   reactStrictMode: true,
@@ -19,26 +16,11 @@ const nextConfig = {
 
 }
 
-module.exports = withPlugins([
-  [
-    optimizedImages,
-    {
-      handleImages: ['jpeg', 'png', 'svg', 'webp', 'gif'],
-      optimizeImagesInDev: true,
-      mozjpeg: {
-        quality: 80,
-      },
-      optipng: false,
-      pngquant: {
-        speed: 7,
-        strip: true,
-        verbose: false,
-      },
-      webp: {
-        preset: 'default',
-        quality: 75,
-      },
-    },
-  ],
-], nextConfig);
+module.exports = {
+  ...nextConfig,
+  images: {
+    loader: 'imgix',
+    path: '/',
+  },
+}
 
