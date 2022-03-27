@@ -11,7 +11,7 @@ jobs:
     runs-on: ubuntu-latest
 
     env:
-      NEXT_PUBLIC_BASE_PATH: 'http://matanyap.github.io/portfolio/'
+      NEXT_PUBLIC_BASE_PATH: /portfolio
 
     strategy:
       matrix:
