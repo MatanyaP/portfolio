@@ -6,11 +6,6 @@ const nextConfig = {
   async exportPathMap() {
     return {
       '/': { page: '/' },
-      '/about': { page: '/about' },
-      '/blog': { page: '/blog' },
-      '/contact': { page: '/contact' },
-      '/projects': { page: '/projects' },
-      '/resume': { page: '/resume' },
     }
   },
 
