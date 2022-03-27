@@ -53,7 +53,7 @@ const Navbar = () => {
         <div className="lg:inline-flex lg:flex-row lg:ml-auto lg:w-auto w-full lg:items-center items-start flex flex-col lg:h-auto">
             <LinkTemplate href="/">.home()</LinkTemplate>
             <LinkTemplate href="/about">.i()</LinkTemplate>
-            <LinkTemplate href="/projects">.projects()</LinkTemplate>
+            <LinkTemplate href="/projects">.works()</LinkTemplate>
             <LinkTemplate href="/cv">.cv()</LinkTemplate>
             <LinkTemplate href="/contact">.ping()</LinkTemplate>
         </div>
