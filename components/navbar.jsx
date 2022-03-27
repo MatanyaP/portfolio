@@ -1,7 +1,7 @@
 import { useState } from 'react'
 import {prefix} from '../utils/prefix'
 import Link from 'next/link'
-import Image from 'components/Image'
+import Image from '../components/Image'
 
 const LinkTemplate = ({ href, children }) => (
     <Link href={href} as={prefix + href}>
