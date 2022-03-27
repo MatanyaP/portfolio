@@ -22,7 +22,7 @@ const Navbar = () => {
     <nav className="flex items-center flex-wrap bg-white-200 p-3">
         <LinkTemplate href="/">
             <a className="inline-flex items-center p-2 mr-4 ">
-                <Image src={`${prefix}/images/logo.png`} width={'50%'} height={'50%'} className={'object-contain'} alt={'logo'} />
+                <img src="/static/images/logo.png" alt="logo" className="w-8 h-8" />
             </a>
         </LinkTemplate>
       <button
