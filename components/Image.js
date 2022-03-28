@@ -8,6 +8,7 @@ export default function Image(props) {
   return (
     <NextImage
       {...props}
+      width={props.width || "50%"}
       loader={customLoader}
     />
   );

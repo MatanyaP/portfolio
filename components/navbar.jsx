@@ -5,7 +5,7 @@ import Image from '../components/Image'
 
 const LinkTemplate = ({ href, children }) => (
     <Link href={href} as={prefix + href}>
-        <a className="lg:inline-flex lg:w-auto w-full px-3 py-2 rounded text-gray-500 font-bold items-center justify-center hover:bg-lime-400 hover:text-white ">
+        <a className="lg:inline-flex lg:w-auto w-full px-3 py-2 rounded text-gray-500 font-bold items-center justify-center hover:bg-lime-400 hover:text-white">
             {children}
         </a>
     </Link>
@@ -20,11 +20,11 @@ const Navbar = () => {
 
   return (
     <nav className="flex items-center flex-wrap bg-white-200 p-3">
-        <LinkTemplate href="/">
+        <Link href="/">
             <a className="inline-flex items-center p-2 mr-4 ">
                 <Image src={`${prefix}/images/logo.png`} width={'50%'} height={'50%'} className={'object-contain'} alt={'logo'} />
             </a>
-        </LinkTemplate>
+        </Link>
       <button
         className={`inline-flex p-3 hover:bg-lime-500 rounded lg:hidden text-lime ml-auto hover:text-white outline-none`}
         onClick={handleClick}
@@ -50,11 +50,11 @@ const Navbar = () => {
             active ? "" : "hidden"
           }   w-full lg:inline-flex lg:flex-grow lg:w-auto`}
       >
-        <div className="lg:inline-flex lg:flex-row lg:ml-auto lg:w-auto w-full lg:items-center items-start flex flex-col lg:h-auto">
+        <div className="lg:inline-flex lg:flex-row lg:ml-auto lg:w-auto w-full lg:items-center items-start flex flex-col lg:h-auto" onClick={handleClick}>
             <LinkTemplate href="/">.home()</LinkTemplate>
             <LinkTemplate href="/about">.i()</LinkTemplate>
             <LinkTemplate href="/projects">.works()</LinkTemplate>
-            <LinkTemplate href="/cv">.cv()</LinkTemplate>
+            {/* <LinkTemplate href="/cv">.cv()</LinkTemplate> */}
             <LinkTemplate href="/contact">.ping()</LinkTemplate>
         </div>
       </div>

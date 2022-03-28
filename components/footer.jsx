@@ -9,7 +9,9 @@ function NavLink({to, children}) {
 
 export default function footer() {
     return (
-        <footer className="md:flex justify-center items-center md:space-x-4 pb-4">
+        // center on mobile as well
+        <footer className="flex  items-center justify-center space-x-4">
+        {/* <footer className="md:flex justify-center items-center md:space-x-4 pb-4"> */}
             <p className="font-medium">
                 <a href="https://github.com/MatanyaP" className="text-lime-500 hover:text-yellow-300">
                     {/* github icon */}

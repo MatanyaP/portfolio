@@ -6,6 +6,8 @@ import {
     Outputs, defaultCommandMapping
   } from 'javascript-terminal';
 
+import isMobile from '../utils/isMobile';
+
 export default function Terminal() {
     const customState = EmulatorState.create({
         'commandMapping': CommandMapping.create({
@@ -74,7 +76,7 @@ export default function Terminal() {
                 commandColor: '#fcfcfc',
                 outputColor: '#FCE883',
                 errorOutputColor: '#ff89bd',
-                fontSize: '1.1rem',
+                fontSize: isMobile() ? '1rem' : '1.8rem',
                 spacing: '1%',
                 fontFamily: 'monospace',
                 width: '100%',

@@ -24,9 +24,9 @@ export default function Home() {
               </p>
             </div>
             <div className="mt-12 mx-auto max-w-screen-xl px-4 sm:mt-16 sm:px-6 md:mt-20 lg:mt-28 lg:px-8 xl:mt-32">
-              <div className="sm:text-center lg:text-left">
+              {/* <div className="sm:text-center lg:text-left"> */}
                   <Terminal />
-                </div>
+                {/* </div> */}
               </div>
             </main>
           </div>
