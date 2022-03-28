@@ -6,19 +6,19 @@ import 'prismjs/components/prism-javascript';
 import "prismjs/themes/prism-funky.css";
 
 const CodeEditor = () => {
-    const [code, setCode] = useState(`i.am = 'a full stack developer, currently working at Cambium Applicable Innovation.'
+    const [code, setCode] = useState(`i.am = 'a full stack developer, currently working at Cambium Applicable Innovation.';
 
-i.love = ['my family', 'code', 'puzzles', 'NBA', 'documentaries', 'learning new things']
+i.love = ['my family', 'code', 'puzzles', 'NBA', 'documentaries', 'learning new things'];
 
-i.workWith = ['JavaScript && TypeScript', 'React', 'Node.js', 'Nest.js', 'MySQL && MSSQL']
+i.workWith = ['JavaScript && TypeScript', 'React', 'Node.js', 'Nest.js', 'MySQL && MSSQL'];
 
-i.aspire = 'to be the person my dog thinks i am'
+i.aspire = 'to be the person my dog thinks i am';
 
-i.linkedin = 'linkedin.com/in/matanperetz'
+i.linkedin = 'linkedin.com/in/matanperetz';
 
-i.github = 'github.com/MatanyaP'
+i.github = 'github.com/MatanyaP';
 
-i.email = 'matanperetz314 at gmail dot com'`);
+i.email = 'matanperetz314 at gmail dot com';`);
     const onChange = (newCode) => {
         setCode(newCode);
     };

@@ -16,10 +16,11 @@ const about = () => {
                         <span className="text-lime-500"><span className="text-blue-300">let </span><span className="text-lime-500">i <span className="text-red-400">=</span> &#123;&#125;;</span></span>
                     </h2>
                     <p className="text-xl text-gray-500">
-                        <span>&#x5c;&#x5c; if there&apos;s anything you don&apos;t like, you can always <a className="underline decoration-lime-500">change</a> it.</span>
+                        <span>&#47;&#47; if there&apos;s anything you don&apos;t like, you can always <a className="underline decoration-lime-500">change</a> it.</span>
                     </p>
                 </div>
                 <div className="mt-12 mx-auto max-w-screen-xl px-4 sm:mt-16 sm:px-6 md:mt-20 lg:mt-28 lg:px-8 xl:mt-32">
+                        
                     <CodeEditor />
                 </div>
             </main>

@@ -5,7 +5,7 @@ import Image from '../components/Image'
 
 const LinkTemplate = ({ href, children }) => (
     <Link href={href} as={prefix + href}>
-        <a className="lg:inline-flex lg:w-auto w-full px-3 py-2 rounded text-gray-500 font-bold items-center justify-center hover:bg-lime-400 hover:text-white">
+        <a className="lg:inline-flex lg:w-auto w-full px-3 py-2 rounded text-gray-500 font-bold items-center justify-center hover:underline decoration-lime-500">
             {children}
         </a>
     </Link>
@@ -56,6 +56,11 @@ const Navbar = () => {
             <LinkTemplate href="/projects">.works()</LinkTemplate>
             {/* <LinkTemplate href="/cv">.cv()</LinkTemplate> */}
             <LinkTemplate href="/contact">.ping()</LinkTemplate>
+            <a href={`${prefix}/CV.pdf`} target="_blank" rel="noopener noreferrer">
+                <button className="underline decoration-lime-500 text-gray-700 font-bold py-2 px-4 rounded">
+                .cv(newTab)
+                </button>
+            </a>
         </div>
       </div>
     </nav>
