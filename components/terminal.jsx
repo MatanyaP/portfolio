@@ -80,12 +80,8 @@ export default function Terminal() {
                 spacing: '1%',
                 fontFamily: 'monospace',
                 width: '100%',
-                height: '50vh'
+                height: '40vh'
               }}
-            //   outputFactory={OutputFactory.create()}
-            //   environmentVariables={EnvironmentVariables.create()}
-            //   fileSystem={FileSystem.create()}
-            //   history={History.create()}
           />
       );
 }

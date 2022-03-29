@@ -54,11 +54,9 @@ const Navbar = () => {
             <LinkTemplate href="/">.home()</LinkTemplate>
             <LinkTemplate href="/about">.i()</LinkTemplate>
             <LinkTemplate href="/projects">.works()</LinkTemplate>
-            {/* <LinkTemplate href="/cv">.cv()</LinkTemplate> */}
-            <LinkTemplate href="/contact">.ping()</LinkTemplate>
             <a href={`${prefix}/CV.pdf`} target="_blank" rel="noopener noreferrer">
                 <button className="underline decoration-lime-500 text-gray-700 font-bold py-2 px-4 rounded">
-                .cv(newTab)
+                  .cv(newTab)
                 </button>
             </a>
         </div>

@@ -24,7 +24,7 @@ i.email = 'matanperetz314 at gmail dot com';`);
     };
 
     return (
-        <div className="flex flex-col text-white items-center justify-center md:flex-row md:justify-between md:items-center md:w-full">
+        <div className="relative text-white flex flex-col min-h-screen ">
             <Editor
                 value={code}
                 onValueChange={code => onChange(code)}

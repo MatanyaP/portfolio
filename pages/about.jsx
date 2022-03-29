@@ -1,8 +1,5 @@
 import React, { useState } from 'react';
-import {prefix} from '../utils/prefix';
-import Head from 'next/head'
 import styles from '../styles/Home.module.css'
-import dynamic from 'next/dynamic'
 import CodeEditor from '../components/codeEditor'
 
 const about = () => {
@@ -20,7 +17,6 @@ const about = () => {
                     </p>
                 </div>
                 <div className="mt-12 mx-auto max-w-screen-xl px-4 sm:mt-16 sm:px-6 md:mt-20 lg:mt-28 lg:px-8 xl:mt-32">
-                        
                     <CodeEditor />
                 </div>
             </main>
