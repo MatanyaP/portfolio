@@ -25,15 +25,15 @@ const Projects = () => {
                     <main className="flex-1">
                         <div className="mt-12 mx-auto max-w-screen-xl px-4 sm:px-6 lg:px-8">
                             <h2 className="flex-1 text-4xl font-extrabold leading-10 tracking-tight text-gray-900 sm:text-5xl sm:leading-none md:text-6xl mb-3">
-                                <span className="text-lime-500"><span className="text-blue-300">some of </span><br/><span className="text-lime-500">my <span className="text-red-400">side projects</span>;</span></span>
+                                <span className="text-lime-500"><span className="text-blue-300">some of </span><span className="text-lime-500">my <br/><span className="text-red-400">side projects</span>;</span></span>
                             </h2>
                             <p className="text-xl text-gray-500">
-                                <span>&#47;&#47; if there&apos;s anything you don&apos;t like, you can always <a className="underline decoration-lime-500">change</a> it.</span>
+                                <span>&#47;&#47; It&apos;s not a bug &#8211; it&apos;s an <a className="underline decoration-lime-500">undocumented feature</a>.</span>
                             </p>
                         </div>
                         <div className="mt-12 mx-auto max-w-screen-xl px-4 sm:mt-16 sm:px-6 md:mt-20 lg:mt-28 lg:px-8 xl:mt-32 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
                                 {projects.map((project, index) => (
-                                    <div className="flex justify-center text-6xl bg-gray-100">
+                                    <div className="flex justify-center text-6xl bg-gray-100" key={`project-${index}`}>
                                         <Card key={index} title={project.name} description={project.description} link={project.link} backgroundImage={project.image} hashtags={project.hashtags} />
                                     </div>
                                 ))}
