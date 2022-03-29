@@ -9,7 +9,7 @@ const Projects = () => {
         name: 'CLI TODO',
         description: 'A simple cli todo app with unnecessary features',
         link: 'https://github.com/MatanyaP/CLITODO',
-        image: `${prefix}/images/cliTodo.png`,
+        image: `${prefix}/images/clitodo.png`,
         hashtags: ['Node.js', 'CLI']
     },
     {

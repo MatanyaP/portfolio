@@ -4,6 +4,7 @@ import Link from 'next/link'
 import Image from '../components/Image'
 
 const LinkTemplate = ({ href, children }) => (
+    // <Link href={href} as={prefix + href}>
     <Link href={href} as={prefix + href}>
         <a className="lg:inline-flex lg:w-auto w-full px-3 py-2 rounded text-gray-500 font-bold items-center justify-center hover:underline decoration-lime-500 focus:underline decoration-lime-500">
             {children}
@@ -22,7 +23,7 @@ const Navbar = () => {
     <nav className="flex items-center flex-wrap bg-white-200 p-3">
         <Link href="/">
             <a className="inline-flex items-center p-2 mr-4 ">
-                <Image src={`${prefix}/images/logo.png`} width={'50%'} height={'50%'} className={'object-contain'} alt={'logo'} />
+                <Image src={`${prefix}/images/logo.png`} width={'80%'} height={'80%'} className={'object-contain'} alt={'logo'} />
             </a>
         </Link>
       <button
