@@ -31,9 +31,9 @@ const Projects = () => {
                                 <span>&#47;&#47; if there&apos;s anything you don&apos;t like, you can always <a className="underline decoration-lime-500">change</a> it.</span>
                             </p>
                         </div>
-                        <div class="mt-12 mx-auto max-w-screen-xl px-4 sm:mt-16 sm:px-6 md:mt-20 lg:mt-28 lg:px-8 xl:mt-32 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                        <div className="mt-12 mx-auto max-w-screen-xl px-4 sm:mt-16 sm:px-6 md:mt-20 lg:mt-28 lg:px-8 xl:mt-32 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
                                 {projects.map((project, index) => (
-                                    <div class="flex justify-center text-6xl bg-gray-100">
+                                    <div className="flex justify-center text-6xl bg-gray-100">
                                         <Card key={index} title={project.name} description={project.description} link={project.link} backgroundImage={project.image} hashtags={project.hashtags} />
                                     </div>
                                 ))}
