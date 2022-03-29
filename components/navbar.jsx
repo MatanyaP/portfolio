@@ -5,7 +5,7 @@ import Image from '../components/Image'
 
 const LinkTemplate = ({ href, children }) => (
     <Link href={href} as={prefix + href}>
-        <a className="lg:inline-flex lg:w-auto w-full px-3 py-2 rounded text-gray-500 font-bold items-center justify-center hover:underline decoration-lime-500">
+        <a className="lg:inline-flex lg:w-auto w-full px-3 py-2 rounded text-gray-500 font-bold items-center justify-center hover:underline decoration-lime-500 focus:underline decoration-lime-500">
             {children}
         </a>
     </Link>
