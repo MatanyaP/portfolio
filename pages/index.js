@@ -1,6 +1,6 @@
 import styles from '../styles/Home.module.css'
 import Terminal from '../components/terminal'
-import styleChange from '../utils/styleChange'
+import changeStyle from '../utils/changeStyle'
 export default function Home() {
   return (
     <div className={styles.container}>
