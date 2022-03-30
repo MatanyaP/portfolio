@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import styles from '../styles/Home.module.css'
 import CodeEditor from '../components/codeEditor'
-import styleChange from '../utils/styleChange'
+import changeStyle from '../utils/changeStyle'
 
 const about = () => {
     
@@ -19,9 +19,9 @@ const about = () => {
                     </p>
                 </div>
                 <div className="mt-12 mx-auto max-w-screen-xl px-4 sm:mt-16 sm:px-6 md:mt-20 lg:mt-28 lg:px-8 xl:mt-32">
-                    <div className="logoInside1" onClick={e => styleChange(e.target)} />
+                    <div className="logoInside1" onClick={e => changeStyle(e.target)} />
                     <CodeEditor />
-                    <div className="logoInside2" onClick={e => styleChange(e.target)} />
+                    <div className="logoInside2" onClick={e => changeStyle(e.target)} />
                 </div>
             </main>
           </div>

@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import styles from '../styles/Home.module.css'
 import Card from '../components/card';
 import { prefix } from '../utils/prefix';
-import styleChange from '../utils/styleChange';
+import changeStyle from '../utils/changeStyle';
 
 const Projects = () => {
     const allProjects = [{
@@ -65,7 +65,7 @@ const Projects = () => {
                                 all
                             </button>
                         </div>
-                        <div className="logoInside1" onClick={e => styleChange(e.target)} />
+                        <div className="logoInside1" onClick={e => changeStyle(e.target)} />
                         <div className="mt-6 mx-auto max-w-screen-xl px-4 sm:mt-12 sm:px-6 md:mt-20 lg:mt-12 lg:px-8 xl:mt-12 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
                                 {projects.map((project, index) => (
                                     <div className="flex justify-center text-6xl bg-gray-100" key={`project-${index}`}>
@@ -73,7 +73,7 @@ const Projects = () => {
                                     </div>
                                 ))}
                         </div>
-                        <div className="logoInside2" onClick={e => styleChange(e.target)} />
+                        <div className="logoInside2" onClick={e => changeStyle(e.target)} />
                     </main>
                 </div>
             </div>
