@@ -4,6 +4,7 @@ import { highlight, languages } from 'prismjs/components/prism-core';
 import 'prismjs/components/prism-clike';
 import 'prismjs/components/prism-javascript';
 import "prismjs/themes/prism-funky.css";
+import Bar from './topBar';
 
 const CodeEditor = () => {
     const [code, setCode] = useState(`i.am = 'a full stack developer, currently working at Cambium Applicable Innovation.';
@@ -25,6 +26,7 @@ i.email = 'matanperetz314 at gmail dot com';`);
 
     return (
         <div className="relative text-white flex flex-col">
+            <Bar />
             <Editor
                 value={code}
                 onValueChange={code => onChange(code)}

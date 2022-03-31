@@ -20,13 +20,15 @@
     "next-compose-plugins": "^2.2.1",
     "next-transpile-modules": "^9.0.0",
     "prismjs": "^1.27.0",
+    "prop-types": "^15.8.1",
     "react": "17.0.2",
     "react-dom": "17.0.2",
     "react-simple-code-editor": "^0.11.0",
     "react-terminal-component": "^1.5.0",
     "responsive-loader": "^2.3.0",
     "sharp": "^0.30.3",
-    "styled-components": "^5.3.3"
+    "styled-components": "^5.3.3",
+    "terminal-in-react": "^4.3.1"
   },
   "devDependencies": {
     "autoprefixer": "^10.4.2",

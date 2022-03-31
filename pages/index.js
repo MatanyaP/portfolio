@@ -1,6 +1,7 @@
 import styles from '../styles/Home.module.css'
 import Terminal from '../components/terminal'
 import changeStyle from '../utils/changeStyle'
+import Terminal2 from '../components/terminal2'
 export default function Home() {
   return (
     <div className={styles.container}>
@@ -19,7 +20,7 @@ export default function Home() {
               </p>
             </div>
             <div className="mt-12 mx-auto max-w-screen-xl px-4 sm:mt-16 sm:px-6 md:mt-20 lg:mt-28 lg:px-8 xl:mt-32">
-              <Terminal />
+              <Terminal2 />
             </div>
           </main>
           </div>
