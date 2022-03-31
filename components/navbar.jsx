@@ -73,13 +73,8 @@ const Navbar = () => {
   return (
     <nav className="flex items-center flex-wrap bg-white-200 p-3">
         <Link href="/">
-            <a className="inline-flex items-center p-2 mr-4 ">
-                <Image src={`${prefix}/images/logo.png`} width={'80%'} height={'80%'} className={'object-contain'} alt={'logo'} 
-                // make logo enter from left slowly
-                style={{
-                  animation: 'logo-enter 0.5s ease-in-out',
-                  animationDelay: '0.5s'
-                }}
+            <a className="inline-flex items-center p-2 mr-4 animate-spin">
+                <Image src={`${prefix}/images/logo.png`} width={'80%'} height={'80%'} className={'object-contain animate-grow'} alt={'logo'} 
                 />
             </a>
         </Link>
