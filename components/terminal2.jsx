@@ -8,6 +8,7 @@ const Terminal2 = () => {
 
     return (
         <Terminal
+        watchConsoleLogging = {true}
             actionHandlers={{
                 handleMaximise: () => {
                     console.log('maximise');
@@ -32,8 +33,7 @@ const Terminal2 = () => {
             commands={{
                     i: {
                         method: (args, print, runCommand) => {
-                        console.log(args._[0]);
-                        if (args._[0] === 0) {
+                        if (args._.length === 0) {
                             print(`i.am: 'a Full Stack Web Developer, currently working at Cambium Applicable Innovation.'\n`
                             + `i.love: ['my family', 'code', 'puzzles', 'NBA', 'documentaries', 'learning new things']\n`
                             + `i.workWith: ['JavaScript && TypeScript', 'React', 'Node.js', 'Nest.js', 'MySQL && MSSQL']\n`
@@ -84,7 +84,6 @@ const Terminal2 = () => {
                 'projects': 'projects: my projects',
 
             }}
-            msg={showMsg}
         />
     );
 };
